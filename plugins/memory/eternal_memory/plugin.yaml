@@ -1,0 +1,6 @@
+name: eternal_memory
+version: 1.0.0
+description: "Eternal Memory — model-agnostik, yerel kalıcı hafıza (SQLite + JSON + Markdown): model değişse bile karakteri ve kuralları koruyan 'Çekirdek Kimlik ve Değişmez Prensipler' zırhı, anahtar kelime tabanlı hatıra/tercih geri getirme ve kritik bilgilerin kalıcı ayıklanması. Sadece Python standart kütüphanesi (sqlite3, json, re, hashlib) — harici bağımlılık yok."
+hooks:
+  - on_session_end
+  - on_pre_compress
