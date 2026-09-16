@@ -1,0 +1,60 @@
+{
+  "upstream": {
+    "repository": "https://github.com/DietrichGebert/ponytail",
+    "commit": "e3ba2aa6f1e6f0bc4d69eb09c9f0d0a93af56156",
+    "release": "v4.10.0",
+    "license": "MIT"
+  },
+  "curation": {
+    "reason": "Only Hermes runtime code, manifest, registered skills, and MIT notice are included.",
+    "excluded": [
+      "benchmarks",
+      "commands",
+      "docs",
+      "examples",
+      "hooks",
+      "tests",
+      "MCP servers",
+      "other agent adapters"
+    ],
+    "reviewed_on": "2026-09-16"
+  },
+  "files": {
+    "LICENSE": {
+      "upstream_git_blob": "715d483338cea4365f0d91a27799cf61226d6bcf",
+      "sha256": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab"
+    },
+    "__init__.py": {
+      "upstream_git_blob": "caefe7629493c22d86008ad0c2853d6ad41610b4",
+      "sha256": "89ded80a6d8af5e4b77d85cc924f75a9be82af5a8ae379f176584e91fedd11e5"
+    },
+    "plugin.yaml": {
+      "upstream_git_blob": "cff82e941309be05e4e14c5960833953ffb61dee",
+      "sha256": "7fa0478b6960ad0ae43358fc20331d25af7666aeeabd38b0349f4dd3f17a1923"
+    },
+    "skills/ponytail-audit/SKILL.md": {
+      "upstream_git_blob": "5582d10335daff5b5947f9b77927fbc97f2047f3",
+      "sha256": "5560b8e383dbe2ddfddc873a1e2bf2e586e23e0cd7d995537482b2315331f6d1"
+    },
+    "skills/ponytail-debt/SKILL.md": {
+      "upstream_git_blob": "ecbc0ca8161b25ced3b4f728398c2ec33988a777",
+      "sha256": "c84fba75f0ca12bfe83f9a78ea02fd125c5dd3f1fbb18124105a489937f284e6"
+    },
+    "skills/ponytail-gain/SKILL.md": {
+      "upstream_git_blob": "012e37b6bf31da1ed4bf936ec8aff53974d5291e",
+      "sha256": "24e01d1c9715cb136ba1c4f1e52a95940c0193558b876828e537736480d6408b"
+    },
+    "skills/ponytail-help/SKILL.md": {
+      "upstream_git_blob": "ba145c0ebb7c7e5682bb2f36047af3bf2030d470",
+      "sha256": "2264d1615117b02b0fd5a69ec84cd2757006471a78e4d6c22eed6d581c1d37a4"
+    },
+    "skills/ponytail-review/SKILL.md": {
+      "upstream_git_blob": "e137a855bd87119a4517895a1000a59b0999e1b8",
+      "sha256": "40df33b58fc6ef889b93585733feb9566b76e9586efa7f376785c1e995197ac0"
+    },
+    "skills/ponytail/SKILL.md": {
+      "upstream_git_blob": "02c0712c86277d49d18a77da3a2b825657bf02d1",
+      "sha256": "1316a2f3f95741d2300b116fe0c2d81ce4a9568656ed0a62643f54aaf09957f2"
+    }
+  }
+}

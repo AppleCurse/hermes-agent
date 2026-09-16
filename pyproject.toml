@@ -604,6 +604,9 @@ redundant-cast = "ignore"
 
 [tool.ruff]
 preview = true  # required for PLW1514 (unspecified-encoding) — preview rule
+# This reviewed profile vendors Ponytail's runtime subset byte-for-byte; formatting it
+# would invalidate the upstream hashes recorded in profiles/curated-core/plugins/ponytail/SOURCE.json.
+extend-exclude = ["profiles/curated-core/plugins/ponytail"]
 
 [tool.ruff.lint]
 # All other lints are intentionally disabled (see comment history on this
