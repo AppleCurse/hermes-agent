@@ -1,0 +1,20 @@
+name: curated-core
+version: 1.0.0
+description: "Minimal, direct Turkish coding and web-research profile: Eternal Memory, Ponytail, Browser Use, Firecrawl, and Sherlock."
+hermes_requires: '>=0.21.2'
+author: AppleCurse/hermes-agent curated profile
+license: MIT
+env_requires:
+  - name: FIRECRAWL_API_KEY
+    description: Optional. Direct Firecrawl quota; blank keeps the explicitly selected keyless route.
+    required: false
+  - name: BROWSER_USE_API_KEY
+    description: Optional. Only needed when you deliberately switch Browser Use to its cloud provider.
+    required: false
+distribution_owned:
+  - SOUL.md
+  - config.yaml
+  - .env.template
+  - plugins
+  - skills
+  - README.md

@@ -1,0 +1,31 @@
+# Curated Core: intentionally narrow. Keep a single external memory provider.
+memory:
+  provider: eternal_memory
+  eternal_memory:
+    auto_extract: true
+    max_results: 6
+    half_life_days: 90
+
+# Browser Use is the interactive driver. It uses a local browser by default;
+# set browser.cloud_provider: browser-use only after explicitly adding a key.
+browser:
+  backend: browser-use
+  cloud_provider: local
+  use_real_profile: false
+
+# Firecrawl owns search and clean extraction. A direct key is optional.
+web:
+  backend: firecrawl
+  search_backend: firecrawl
+  extract_backend: firecrawl
+  keyless_fallback: true
+  keyless_rescue: true
+
+# The only external code plugin in this profile is the pinned, reviewed Ponytail subset.
+plugins:
+  enabled:
+    - ponytail
+  entries:
+    ponytail:
+      allow_tool_override: false
+  scan_on_install: true
